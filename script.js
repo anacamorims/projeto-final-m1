@@ -20,3 +20,28 @@ const perguntas = [
 const divQuiz = document.getElementById("quiz-container")
 const divPergunta = document.getElementById("question")
 const divAlternativas = document.getElementById("alternatives")
+
+let iPerguntaAtual = 0
+let pontuacao = 0
+
+
+function mostraPergunta() {
+  const perguntaAtual = perguntas[iPerguntaAtual]
+  divPergunta.innerHTML = ""
+  divPergunta.textContent = perguntaAtual.pergunta
+  divAlternativas.innerHTML = ""
+
+//ou perguntaAtual.alternativas.length
+  for (let i = 0; i <= 3; i++) {
+    const alternativa = perguntaAtual.alternativas[i]
+    const botao = document.createElement("button")
+    botao.textContent = alternativa
+    botao.addEventListener("click", () => verificar(i))
+    divAlternativas.appendChild(botao);
+  }
+  
+}
+
+
+
+mostraPergunta()
