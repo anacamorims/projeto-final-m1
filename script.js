@@ -77,4 +77,18 @@ if (iPerguntaAtual < 3) {
 
 
 
+function reiniciarQuiz() {
+  iPerguntaAtual = 0
+  pontuacao = 0
+  divPergunta.innerHTML = ""
+  divAlternativas.innerHTML = ""
+  mostraPergunta()
+}
+
+function exibirResultado() {
+  divQuiz.innerHTML = `<h2>Quiz concluído!</h2><p>Sua pontuação: ${pontuacao} de ${perguntas.length}</p>`;
+}
+
+
+
 mostraPergunta()
