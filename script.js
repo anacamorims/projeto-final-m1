@@ -15,3 +15,8 @@ const perguntas = [
     iRespostaCorreta: 0
   }
 ]
+
+
+const divQuiz = document.getElementById("quiz-container")
+const divPergunta = document.getElementById("question")
+const divAlternativas = document.getElementById("alternatives")
