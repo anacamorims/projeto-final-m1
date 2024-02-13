@@ -19,7 +19,7 @@ const perguntas = [
 
 const divQuiz = document.getElementById("quiz-container")
 const divPergunta = document.getElementById("question")
-const divAlternativas = document.getElementById("alternatives")
+const divAlternativas = document.getElementById("alternativas")
 
 let iPerguntaAtual = 0
 let pontuacao = 0
@@ -51,7 +51,8 @@ function verificar(botaoApertado) {
     
   } else {
     alert("Vixi você errou, reinicie o quiz e tente de novo")
-    
+
+    /* aqui*/
     
     if (!document.getElementById("btnReiniciar")) {
       const botaoReiniciar = document.createElement("button");
