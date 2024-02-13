@@ -16,8 +16,8 @@ main{
     color: aliceblue; 
     font-family:'Courier New', Courier, monospace;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-70%);
     text-align: center;
     
 }
@@ -25,13 +25,16 @@ main{
 #question{
     color: aliceblue; 
     font-family:'Courier New', Courier, monospace;
+    position: relative;
+    top: 5%;
+    transform: translateY(-50%);
+    text-align: center;
   }
   
 header{
     background-color: #0004;
     padding: 10px; 
-    height: 200px;
-    
+    height: 15em;
   }
 
 body {
@@ -42,69 +45,110 @@ body {
   }
 
 #quiz-container {
-   height: 25.0rem;
-   width: 33.0rem;
+   height: 28rem;
+   width: 33rem;
    padding: 50px;
    border: black solid 1px;
+   display: flex;
    flex-direction: column;
-   border: #363636 solid 1px;
-   border-radius: 7px;
-   background-color: transparent;
+   border: rgb(153, 196, 1);
+   border-radius: 10px;
+   background-color: rgb(153, 196, 1);
    backdrop-filter: blur(10px);
+
   }
 
-@media screen and (max-width: 500px) {
-    
+@media screen and (max-width: 600px) {
+
+header{
+    background-color: #0004;
+    padding: 30px; 
+    height: 30em;
+}
+
 button {
     width: 100px;
     height: 30px;
     margin: 10px;
   }
-    
+
+#tittle-header{
+    position: relative;
+    top: 20%;
+}
+
+#paragraph-header{
+    position: relative;
+    top: -40%;
+}
+
+#question{
+    position: relative;
+    transform:translate(-50%, -50%);
+    left: 50%;
+    font-size: 1.5em;
+}
+
 #quiz-container {
    display: flex;
    flex-direction: column;
-   height: 600px;
+   height: 680px;
    width: 300px;
-   font-size: 10px;
-   }
+   font-size: 15px; 
+   position: relative;
+   top: 10px;
+   left: 10px;
+}
+
+#btnReiniciar{
+    width: 160px;
+    height: 70px;
+    margin: 5px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    right: 34%;
+}
 }
   
-.paragrafo-header{
-    display: flex;
-    flex-direction: row;
-}
+#paragraph-header{
+    position: relative;
+    transform:translateY(110%);
+    color: azure;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+  }
 
 p{
     font-size: 20px;
     text-align: center;
     margin: 50px;
+    position: relative;
+    transform:translateY(110%);
+    color: azure;
+    font-family: 'Gill Sans', Calibri, sans-serif;
   }
   
 button {
-    width: 150px;
-    height: 60px;
+    width: 170px;
+    height: 70px;
     margin: 20px;
-    border: 3px solid #024955;
+    border: none;
     border-radius: 45px;
-    transition: all 0.3s;
+    transition: all 0.1s;
     cursor: pointer;
     background: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
   }
   
 button:hover {
     background: #024955;
     color: white;
-    font-size: 20px;
+    font-size: 1.1em;
+    transform: scale(1.1);
   }
 
 #btnReiniciar {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 17px 40px;
     border-radius: 50px;
     cursor: pointer;
@@ -115,6 +159,10 @@ button:hover {
     text-transform: uppercase;
     font-size: 15px;
     transition: all 0.5s ease;
+    position: relative;
+    top: 2%;
+    transform: translateX(55%);
+    text-align: center;
   }
   
 #btnReiniciar:hover {
