@@ -5,11 +5,17 @@
    text-decoration: none;
   }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 89.4vh;
+body {
+    height: 100%;
+    background-image: url(img/img-1.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+
+header{
+    background-color: #0004;
+    padding: 10px; 
+    height: 15em;
   }
 
 #tittle-header{
@@ -19,8 +25,34 @@ main{
     top: 40%;
     transform: translateY(-70%);
     text-align: center;
-    
 }
+
+#paragraph-header{
+    position: relative;
+    transform:translateY(110%);
+    color: azure;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89.4vh;
+  }
+
+#quiz-container {
+    height: 28rem;
+    width: 33rem;
+    padding: 50px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    border: rgb(153, 196, 1);
+    border-radius: 10px;
+    background-color: rgb(153, 196, 1);
+    backdrop-filter: blur(10px);
+   }
 
 #question{
     color: aliceblue; 
@@ -30,32 +62,77 @@ main{
     transform: translateY(-50%);
     text-align: center;
   }
-  
-header{
+
+p{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+    position: relative;
+    transform:translateY(110%);
+    color: azure;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+  }
+
+button {
+    width: 170px;
+    height: 70px;
+    margin: 20px;
+    border: none;
+    border-radius: 45px;
+    transition: all 0.1s;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+button:hover {
+    background: #024955;
+    color: white;
+    font-size: 1.1em;
+    transform: scale(1.1);
+  }
+
+#btnReiniciar {
+    display: flex;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(255, 3, 3);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    position: relative;
+    top: 2%;
+    transform: translateX(55%);
+    text-align: center;
+  }
+
+#btnReiniciar:hover {
+    letter-spacing: 3px;
+    background-color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(255, 0, 0) 0px 7px 29px 0px;
+  }
+
+footer{
     background-color: #0004;
-    padding: 10px; 
-    height: 15em;
-  }
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  } 
 
-body {
-    height: 100%;
-    background-image: url(img/img-1.jpg);
-    background-size: cover;
-    font-family: Arial, sans-serif;
-  }
-
-#quiz-container {
-   height: 28rem;
-   width: 33rem;
-   padding: 50px;
-   border: black solid 1px;
-   display: flex;
-   flex-direction: column;
-   border: rgb(153, 196, 1);
-   border-radius: 10px;
-   background-color: rgb(153, 196, 1);
-   backdrop-filter: blur(10px);
-
+.footer-li{
+    list-style: none;
+    color: azure;
+    text-align: center;
+    line-height: 30px;
   }
 
 @media screen and (max-width: 600px) {
@@ -65,12 +142,6 @@ header{
     padding: 30px; 
     height: 30em;
 }
-
-button {
-    width: 100px;
-    height: 30px;
-    margin: 10px;
-  }
 
 #tittle-header{
     position: relative;
@@ -100,6 +171,12 @@ button {
    left: 10px;
 }
 
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+  }
+
 #btnReiniciar{
     width: 160px;
     height: 70px;
@@ -110,74 +187,17 @@ button {
 }
 }
   
-#paragraph-header{
-    position: relative;
-    transform:translateY(110%);
-    color: azure;
-    font-family: 'Gill Sans', Calibri, sans-serif;
-  }
 
-p{
-    font-size: 20px;
-    text-align: center;
-    margin: 50px;
-    position: relative;
-    transform:translateY(110%);
-    color: azure;
-    font-family: 'Gill Sans', Calibri, sans-serif;
-  }
-  
-button {
-    width: 170px;
-    height: 70px;
-    margin: 20px;
-    border: none;
-    border-radius: 45px;
-    transition: all 0.1s;
-    cursor: pointer;
-    background: rgb(255, 255, 255);
-    font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-button:hover {
-    background: #024955;
-    color: white;
-    font-size: 1.1em;
-    transform: scale(1.1);
-  }
 
-#btnReiniciar {
-    display: flex;
-    padding: 17px 40px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 0;
-    background-color: rgb(255, 3, 3);
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all 0.5s ease;
-    position: relative;
-    top: 2%;
-    transform: translateX(55%);
-    text-align: center;
-  }
   
-#btnReiniciar:hover {
-    letter-spacing: 3px;
-    background-color: hsl(0, 100%, 50%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(255, 0, 0) 0px 7px 29px 0px;
-  }
+
   
-#btnReiniciar:active {
-    letter-spacing: 3px;
-    background-color: hsl(340, 100%, 50%);
-    color: hsl(0, 100%, 50%);
-    box-shadow: rgb(247, 0, 62) 0px 0px 0px 0px;
-    transform: translateY(10px);
-    transition: 100ms;
-  }
+
+
+
   
+
+  
+ 
+
+ 
