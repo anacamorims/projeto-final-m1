@@ -1,8 +1,8 @@
 const perguntas = [
   {
     pergunta: "Como que todo código de HTML começa?",
-    alternativas: ["a) <head></head>", "b) <html></html>", "c) <!DOCTYPE html>", "d) <start></start>"],
-    iRespostaCorreta: 2
+    alternativas: ["a) <head></head>", "b) <html></html>", "c) <start></start>", "d <!DOCTYPE html>"],
+    iRespostaCorreta: 3
   },
   {
     pergunta: "Qual tag que define o título de uma página em HTML?",
@@ -98,7 +98,7 @@ function exibirResultado() {
 
 function showRestartPage() {
   document.getElementById("question").style.display = 'none'
-  document.getElementById("alternatives").style.display = 'none'
+  document.getElementById("alternativas").style.display = 'none'
 
   restartPageEl.style.display = 'flex'
   restartPageEl.addEventListener("click", reiniciarQuiz);
