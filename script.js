@@ -39,7 +39,7 @@ function mostraPergunta() {
   divPergunta.innerHTML = ""
   divPergunta.textContent = perguntaAtual.pergunta
 
-  // restart alternatives section
+  // restart alternativas section
   divAlternativas.style.display = 'flex'
   divAlternativas.innerHTML = ""
 
