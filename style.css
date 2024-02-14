@@ -1,45 +1,44 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    text-decoration: none;
-  }
+}
 
 body {
     height: 100%;
     background-image: url(img/img-1.jpg);
     background-size: cover;
     font-family: Arial, sans-serif;
-  }
+}
 
-header{
+header {
     background-color: #0004;
-    padding: 10px; 
-    height: 15em;
-  }
+    padding: 15px; 
+    height: 100%;
+}
 
-#tittle-header{
+#title-header {
     color: aliceblue; 
     font-family:'Courier New', Courier, monospace;
     position: relative;
-    top: 40%;
-    transform: translateY(-70%);
+    transform: translateY(40%);
     text-align: center;
 }
 
-#paragraph-header{
+#paragraph-header {
     position: relative;
-    transform:translateY(110%);
+    transform:translateY(80%);
     color: azure;
     font-family: 'Gill Sans', Calibri, sans-serif;
-  }
+}
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 89.4vh;
-  }
+}
 
 #quiz-container {
     height: 28rem;
@@ -52,18 +51,18 @@ main{
     border-radius: 10px;
     background-color: rgb(153, 196, 1);
     backdrop-filter: blur(10px);
-   }
+}
 
-#question{
+#question {
     color: aliceblue; 
     font-family:'Courier New', Courier, monospace;
     position: relative;
     top: 5%;
     transform: translateY(-50%);
     text-align: center;
-  }
+}
 
-p{
+p {
     font-size: 20px;
     text-align: center;
     margin: 50px;
@@ -71,7 +70,7 @@ p{
     transform:translateY(110%);
     color: rgb(0, 0, 0);
     font-family: 'Gill Sans', Calibri, sans-serif;
-  }
+}
 
 button {
     width: 170px;
@@ -84,14 +83,14 @@ button {
     background: rgb(255, 255, 255);
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
-  }
+}
 
 button:hover {
     background: #024955;
     color: white;
     font-size: 1.1em;
     transform: scale(1.1);
-  }
+}
 
 #btnReiniciar {
     display: flex;
@@ -106,19 +105,17 @@ button:hover {
     font-size: 15px;
     transition: all 0.5s ease;
     position: relative;
-    top: 2%;
-    transform: translateX(55%);
     text-align: center;
-  }
+}
 
 #btnReiniciar:hover {
     letter-spacing: 3px;
     background-color: hsl(0, 100%, 50%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(255, 0, 0) 0px 7px 29px 0px;
-  }
+}
 
-footer{
+footer {
     background-color: #0004;
     text-align: center;
     padding: 10px;
@@ -126,65 +123,77 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: column;
-  } 
+} 
 
-.footer-li{
+.footer-li {
     list-style: none;
     color: azure;
     text-align: center;
     line-height: 30px;
-  }
+}
+
+#alternatives {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#restart-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
 
 @media screen and (max-width: 600px) {
+    header {
+        background-color: #0004;
+        padding: 30px; 
+        height: 30em;
+    }
 
-header{
-    background-color: #0004;
-    padding: 30px; 
-    height: 30em;
-}
+    #tittle-header {
+        position: relative;
+        top: 20%;
+    }
 
-#tittle-header{
-    position: relative;
-    top: 20%;
-}
+    #paragraph-header {
+        position: relative;
+        top: -40%;
+    }
 
-#paragraph-header{
-    position: relative;
-    top: -40%;
-}
+    #question {
+        position: relative;
+        transform:translate(-50%, -50%);
+        left: 50%;
+        font-size: 1.5em;
+    }
 
-#question{
-    position: relative;
-    transform:translate(-50%, -50%);
-    left: 50%;
-    font-size: 1.5em;
-}
+    #quiz-container {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 300px;
+        font-size: 15px; 
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
 
-#quiz-container {
-   display: flex;
-   flex-direction: column;
-   height: 500px;
-   width: 300px;
-   font-size: 15px; 
-   position: relative;
-   top: 10px;
-   left: 10px;
-}
+    button {
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+    }
 
-button {
-    width: 110px;
-    height: 50px;
-    margin: 10px;
-  }
-
-#btnReiniciar{
-    width: 160px;
-    height: 70px;
-    margin: 50px 150px;
-    position: relative;
-    transform: translate(-50%, -50%);
-    right: 34%;
-}
+    #btnReiniciar {
+        width: 160px;
+        height: 70px;
+    }
 }
   
 
