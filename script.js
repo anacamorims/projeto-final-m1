@@ -39,7 +39,7 @@ function mostraPergunta() {
   divPergunta.innerHTML = ""
   divPergunta.textContent = perguntaAtual.pergunta
 
-  // restart alternatives section
+  // restart alternativas section
   divAlternativas.style.display = 'flex'
   divAlternativas.innerHTML = ""
 
@@ -98,7 +98,7 @@ function exibirResultado() {
 
 function showRestartPage() {
   document.getElementById("question").style.display = 'none'
-  document.getElementById("alternatives").style.display = 'none'
+  document.getElementById("alternativas").style.display = 'none'
 
   restartPageEl.style.display = 'flex'
   restartPageEl.addEventListener("click", reiniciarQuiz);
