@@ -78,6 +78,7 @@ function verificar(botaoApertado) {
     pontuacao = pontuacao + 1
     alert("Tá sabendo muito, você acertou.")
     
+    
   } else {
     alert("Vixi você errou, reinicie o quiz e tente de novo")
 
@@ -109,6 +110,7 @@ function reiniciarQuiz() {
 
 function exibirResultado() {
   divQuiz.innerHTML = `<h2>Quiz concluído!</h2><p>Sua pontuação: ${pontuacao} de ${perguntas.length}</p>`;
+
 }
 
 function showRestartPage() {
