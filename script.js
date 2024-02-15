@@ -28,6 +28,16 @@ const perguntas = [
     pergunta: "Qual tag adiciona uma lista não ordenada no HTML?",
     alternativas: ["a) <ul>", "b)<p>", "c)<src>", "d)<hr>"],
     iRespostaCorreta: 0
+  },
+  {
+    pergunta: "Qual tag adiciona uma lista não ordenada no HTML?",
+    alternativas: ["a) <ul>", "b)<p>", "c)<src>", "d)<hr>"],
+    iRespostaCorreta: 0
+  },
+  {
+    pergunta: "Qual tag HTML é usada para criar um link clicável?",
+    alternativas: ["a) <link>", "b)<a>", "c)<href>", "d)<url>"],
+    iRespostaCorreta: 1
   }
 ]
 
@@ -85,7 +95,7 @@ function verificar(botaoApertado) {
   iPerguntaAtual++;
 
 //ou perguntas.length
-if (iPerguntaAtual < 6) {
+if (iPerguntaAtual < 7) {
   mostraPergunta()
 } else {
   exibirResultado()
