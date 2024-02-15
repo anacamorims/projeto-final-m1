@@ -23,6 +23,11 @@ const perguntas = [
     pergunta: "Qual tag adiciona uma lista ordenada no HTML?",
     alternativas: ["a) <ol>", "b)<p>", "c)<hr>", "d)<li>"],
     iRespostaCorreta: 0
+  },
+  {
+    pergunta: "Qual tag adiciona uma lista não ordenada no HTML?",
+    alternativas: ["a) <ul>", "b)<p>", "c)<src>", "d)<hr>"],
+    iRespostaCorreta: 0
   }
 ]
 
@@ -80,7 +85,7 @@ function verificar(botaoApertado) {
   iPerguntaAtual++;
 
 //ou perguntas.length
-if (iPerguntaAtual < 5) {
+if (iPerguntaAtual < 6) {
   mostraPergunta()
 } else {
   exibirResultado()
