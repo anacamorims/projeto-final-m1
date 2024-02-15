@@ -1,7 +1,7 @@
 const perguntas = [
   {
     pergunta: "Como que todo código de HTML começa?",
-    alternativas: ["a) <head></head>", "b) <html></html>", "c) <start></start>", "d <!DOCTYPE html>"],
+    alternativas: ["a) <head></head>", "b) <html></html>", "c) <start></start>", "d) <!DOCTYPE html>"],
     iRespostaCorreta: 3
   },
   {
@@ -18,6 +18,11 @@ const perguntas = [
     pergunta: "Qual tag coloca uma foto no Website?",
     alternativas: ["a)<photo>", "b)<src>", "c)<img>", "d)<media>"],
     iRespostaCorreta: 2
+  },
+  {
+    pergunta: "Qual tag adiciona uma lista ordenada no HTML?",
+    alternativas: ["a) <ol>", "b)<p>", "c)<hr>", "d)<li>"],
+    iRespostaCorreta: 0
   }
 ]
 
@@ -75,7 +80,7 @@ function verificar(botaoApertado) {
   iPerguntaAtual++;
 
 //ou perguntas.length
-if (iPerguntaAtual < 4) {
+if (iPerguntaAtual < 5) {
   mostraPergunta()
 } else {
   exibirResultado()

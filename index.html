@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz M1</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz M1</title>
+    <link rel="stylesheet" href="style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1 id="title-header">Quiz conhecimentos em HTML</h1>
+      <p id="paragraph-header">
+        Bem-vindo ao quiz sobre conhecimentos em HTML. O quiz possui 5 fases,
+        sendo cada fase composta por uma pergunta e quatro alternativas,
+        contendo apenas uma correta, se você errar irá aprecer um botão de
+        reiniciar.
+      </p>
+    </header>
 
-  <header>
-    <h1 id="title-header">Quiz conhecimentos em HTML</h1>
-    <p id="paragraph-header">Bem-vindo ao quiz sobre conhecimentos em HTML. O quiz possui 5 fases, sendo cada fase composta por uma pergunta e quatro alternativas, contendo apenas uma correta, se você errar irá aprecer um botão de reiniciar.</p>
-  </header>
+    <main>
+      <section>
+        <div id="quiz-container">
+          <h2 id="question"></h2>
+          <div id="alternativas"></div>
 
- <main>
-    <section>
-      <div id="quiz-container">
-        <h2 id="question"></h2>
-        <div id="alternativas"></div>
-  
-        <div id="restart-page">
-          <h1>Oops! Não foi dessa vez,tente novamente...</h1>
-          <button id="btnReiniciar">Reiniciar Quiz</button>
+          <div id="restart-page">
+            <h1 class="container_titulo">Oops! Não foi dessa vez,tente novamente...</h1>
+            <button id="btnReiniciar">Reiniciar Quiz</button>
+          </div>
         </div>
-      </div>
-    </section>
- </main>
+      </section>
+    </main>
 
- <footer>
-  <ul>
-    <li class="footer-li">Quiz desenvolvido pela Squad 1 para o projeto final do M1 </li>
-    <li class="footer-li">Aplicação desenvolvida como atividade para a PdA (Programadores do Amanhã)</li>
-  </ul>
- </footer>
-  
-  <script src="script.js"></script>
+    <footer>
+      <ul>
+        <li class="footer-li">
+          Quiz desenvolvido pela Squad 1 para o projeto final do M1
+        </li>
+        <li class="footer-li">
+          Aplicação desenvolvida como atividade para a PdA (Programadores do
+          Amanhã)
+        </li>
+      </ul>
+    </footer>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
