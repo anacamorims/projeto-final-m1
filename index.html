@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz M1</title>
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz M1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <header>
-      <h1 id="title-header">Quiz conhecimentos em HTML</h1>
-      <p id="paragraph-header">
-        Bem-vindo ao quiz sobre conhecimentos em HTML. O quiz possui 5 fases,
-        sendo cada fase composta por uma pergunta e quatro alternativas,
-        contendo apenas uma correta, se você errar irá aprecer um botão de
-        reiniciar.
-      </p>
-    </header>
+<body>
 
-    <main>
-      <section>
-        <div id="quiz-container">
-          <h2 id="question"></h2>
-          <div id="alternativas"></div>
+  <header>
+    <h1 id="title-header">Quiz conhecimentos em HTML</h1>
+    <p id="paragraph-header">Bem-vindo ao quiz sobre conhecimentos em HTML. O quiz possui 5 fases, sendo cada fase composta por uma pergunta e quatro alternativas, contendo apenas uma correta, se você errar irá aprecer um botão de reiniciar.</p>
+  </header>
 
-          <div id="restart-page">
-            <h1 class="container_titulo">Oops! Não foi dessa vez, tente novamente...</h1>
-            <button id="btnReiniciar">Reiniciar Quiz</button>
-          </div>
+ <main>
+    <section>
+      <div id="quiz-container">
+        <h2 id="question"></h2>
+        <div id="alternativas"></div>
+  
+        <div id="restart-page">
+          <h1>Oops! Não foi dessa vez,tente novamente.
+          </h1>
+          <button id="btnReiniciar">Reiniciar Quiz</button>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+ </main>
 
-    <footer>
-      <ul>
-        <li class="footer-li">
-          Quiz desenvolvido pela Squad 1 para o projeto final do M1
-        </li>
-        <li class="footer-li">
-          Aplicação desenvolvida como atividade para a PdA (Programadores do
-          Amanhã)
-        </li>
-      </ul>
-    </footer>
+ <footer>
+  <ul>
+    <li class="footer-li">Quiz desenvolvido pela Squad 1 para o projeto final do M1 </li>
+    <li class="footer-li">Aplicação desenvolvida como atividade para a PdA (Programadores do Amanhã)</li>
+  </ul>
+ </footer>
+  
+  <script src="script.js"></script>
 
-    <script src="./js/script.js"></script>
-  </body>
+</body>
+
 </html>
