@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(img/img-1.jpg);
+  background-image: url(../img/img-1.jpg);
   background-size: cover;
   font-family: "Comfortaa", sans-serif;
   height: 100%;
@@ -47,9 +47,9 @@ main {
   border: black solid 1px;
   display: flex;
   flex-direction: column;
-  border: rgb(153, 196, 1);
+  border: rgb(0, 224, 0);
   border-radius: 10px;
-  background-color:#33af5d;
+  background-color:#157434;
   backdrop-filter: blur(10px);
 }
 
