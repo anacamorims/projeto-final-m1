@@ -8,7 +8,7 @@
 body {
   background-image: url(img/img-1.jpg);
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: "Comfortaa", sans-serif;
   height: 100%;
 }
 
@@ -20,7 +20,7 @@ header {
 
 #title-header {
   color: aliceblue;
-  font-family: "Inter", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   position: relative;
   transform: translateY(40%);
   text-align: center;
@@ -30,7 +30,7 @@ header {
   position: relative;
   transform: translateY(80%);
   color: azure;
-  font-family: "Roboto", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 main {
@@ -55,7 +55,7 @@ main {
 
 #question {
   color: aliceblue;
-  font-family: "Inter", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   position: relative;
   top: 5%;
   transform: translateY(-50%);
@@ -82,7 +82,7 @@ button {
   cursor: pointer;
   background: rgb(255, 255, 255);
   font-size: 1em;
-  font-family: "Inter", sans-serif;
+   font-family: "Comfortaa", sans-serif;
 }
 
 button:hover {
